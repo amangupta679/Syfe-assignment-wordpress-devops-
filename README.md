@@ -1,4 +1,4 @@
-                                                                                                       Infra Intern Syfe -2022
+                                                                 Infra Intern Syfe -2022
 
 #1 - Run a Production grade Wordpress app on Kubernetes
 Objectives:
