@@ -176,7 +176,7 @@ and need to reset it after installation  .
 
 
 ![02 05 2023_17 01 32_REC](https://user-images.githubusercontent.com/56467452/235656956-7694f56e-0300-4b5e-ad34-f9d6ce9742c3.png)
-![02 05 2023_16 58 19_REC](https://user-images.githubusercontent.com/56467452/235656971-522a57b6-4690-405b-9585-d1cac0dd6bb0.png)
 ![02 05 2023_17 04 23_REC](https://user-images.githubusercontent.com/56467452/235656974-255bd34d-ab12-4920-bc9b-e2518a4e52ab.png)
 
+But due to some issue the data was not ahowing   . 
    
