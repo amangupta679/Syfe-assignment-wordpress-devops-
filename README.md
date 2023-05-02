@@ -139,16 +139,44 @@ Uninstall the Helm Release
   
   Step 8 : Verify the WordPress Deployment use the following command to get the external IP address of the Nginx service
   * kubectl get svc nginx
+  Open a web browser and enter the IP address in the address bar. You should see the WordPress installation page  ----->  amangupta679.wordpress.local.com
+  
   
 
   
+#2 Setup monitoring and alerting for wordpress app
+
+Objectives:
+ * Deploy Prometheus / Grafana stack on kubernetes (Can use public helm charts)
+ * Setup monitoring and alerting for your application deployed earlier such as I should get below container    metrics (Points for visualisation and alerting)
+  a. Pod CPU utilisation
+* Monitoring for nginx deployed in Objective-1 such as: 
+  Total Request Count
+  Total 5xx request
+* Create a document for all required metrics for wordpress, apache and nginx.
+
+
+To set up monitoring and alerting for your WordPress app, we can use the Grafana stack which includes Prometheus for collecting and storing metrics data, Grafana for visualizing metrics, and Alertmanager for managing alerts.
+
+Add the Grafana helm repository
+* helm repo add grafana https://grafana.github.io/helm-charts
+Install the Grafana stack using Helm
+* helm install grafana-stack grafana/grafana-stack
+
+Access the Grafana dashboard by getting the Grafana URL
+kubectl get svc -n grafana
+
+youripaccress and port 3000 you can run grafana :
+my ipand port http://127.0.0.1:3000  
+user id and password --- admin and admin  
+and need to reset it after installation  . 
 
 
 
 
 
-
-
-
+![02 05 2023_17 01 32_REC](https://user-images.githubusercontent.com/56467452/235656956-7694f56e-0300-4b5e-ad34-f9d6ce9742c3.png)
+![02 05 2023_16 58 19_REC](https://user-images.githubusercontent.com/56467452/235656971-522a57b6-4690-405b-9585-d1cac0dd6bb0.png)
+![02 05 2023_17 04 23_REC](https://user-images.githubusercontent.com/56467452/235656974-255bd34d-ab12-4920-bc9b-e2518a4e52ab.png)
 
    
